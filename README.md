@@ -23,7 +23,7 @@ class PeterStaykov:
     
     def get_tech_stack(self):
         return {
-            "languages": ["Python", "SQL", "C", "JavaScript"],
+            "languages": ["Python", "SQL", "C", "HTML/CSS"],
             "ai_ml": ["PyTorch", "Transformers", "scikit-learn", "Hugging Face"],
             "web": ["FastAPI", "HTML/CSS", "SQLite"],
             "tools": ["Git", "Ollama", "Pinecone", "REST APIs"]
