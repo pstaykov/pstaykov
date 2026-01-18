@@ -5,7 +5,6 @@
 ### Python Developer | AI/ML Enthusiast | Critical thinker and Problem solver
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-peter.staykov.net-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](http://peter.staykov.net)
-[![Email](https://img.shields.io/badge/Email-peter.sta.2010@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:peter.sta.2010@gmail.com)
 
 </div>
 
