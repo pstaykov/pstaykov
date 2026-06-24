@@ -2,7 +2,7 @@
 
 # Hi, I'm Peter Staykov
 
-### Python Developer | AI/ML Enthusiast | Critical thinker and Problem solver
+### ML Researcher | Competitive Programmer | 9th Grade @ Otto-Nagel-Gymnasium Berlin
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-peter.staykov.net-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](http://peter.staykov.net)
 
@@ -15,17 +15,18 @@
 ```python
 class PeterStaykov:
     def __init__(self):
-        self.role = "Python Developer & AI Enthusiast"
-        self.interests = ["Machine Learning", "LLMs", "RAG Systems", "Full-Stack Dev"]
-        self.currently_learning = ["MLOps", "Advanced NLP", "Prompt Engineering"]
-        self.fun_fact = "I built a neural network to analyze café reviews!"
-    
+        self.grade = 9
+        self.school = "Otto-Nagel-Gymnasium, Berlin"
+        self.interests = ["ML Research", "Competitive Programming", "Quant Finance", "Computer Vision"]
+        self.currently_working_on = ["GLipsNet (German Visual Speech Recognition)", "TU Berlin Juniorstudium"]
+        self.competitions = ["BWKI", "BWINF", "Math Olympiad", "Codeforces Div. 3/4"]
+        self.goal = "ETH Zürich BSc CS"
+
     def get_tech_stack(self):
         return {
-            "languages": ["Python", "SQL", "C", "HTML/CSS"],
-            "ai_ml": ["PyTorch", "Transformers", "scikit-learn", "Hugging Face"],
-            "web": ["FastAPI", "HTML/CSS", "SQLite"],
-            "tools": ["Git", "Ollama", "Pinecone", "REST APIs"]
+            "languages": ["Python", "C", "SQL", "HTML/CSS"],
+            "ai_ml": ["PyTorch", "Transformers", "Whisper", "MS-TCN", "ResNet", "NumPy"],
+            "tools": ["Git", "FastAPI", "Ollama", "Pinecone", "REST APIs"],
         }
 ```
 
@@ -40,25 +41,25 @@ class PeterStaykov:
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### AI/ML & Data Science
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge)
-![Transformers](https://img.shields.io/badge/Transformers-FF6F00?style=for-the-badge)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 ### Frameworks & Tools
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
+
 ---
+
 <div align="center">
 
-## 🏆 Academic Achievements
+## Academic Achievements
 
 <table>
 <tr>
@@ -79,11 +80,7 @@ class PeterStaykov:
 </tr>
 </table>
 
----
-
 ### Competition History
-
-<div align="center">
 
 | Year | Competition | Achievement | Level |
 |:----:|:------------|:-----------:|:-----:|
@@ -99,71 +96,67 @@ class PeterStaykov:
 
 ## Featured Projects
 
-<div align="center">
-
-### Highlighted Work
-
-</div>
-
 <table>
 <tr>
 <td width="50%">
 
-### ☕ [Café Lumière](https://github.com/pstaykov/Cafe)
-**Full-Stack AI-Powered Café Platform**
+### 👄 [GLipsNet](https://github.com/pstaykov/Lipread)
+**German Word-Level Visual Speech Recognition** · BWKI 2025
 
-**[Live Demo](https://cafe-skmi.onrender.com/)**
+End-to-end VSR system for German, trained on the 500-class **GLips dataset**.
 
-- Custom neural network for sentiment analysis
-- Real-time reservation system
-- FastAPI backend with SQLite
-- AI-powered customer review analysis
+- Architecture: `Frontend3D → ResNet18 → SpatialAttentionPool → MS-TCN → 4-layer Transformer`
+- **59.1% top-1 / 77.2% top-5** after 50 epochs (~40h on RTX 4070)
+- Multimodal extension: cross-attention fusion with **Whisper** encoder output
+- Outperforms GLips baseline (Schwiebert et al.) on word-level classification
 
-`Python` `FastAPI` `PyTorch` `SQLite` `HTML/CSS/JS`
+`PyTorch` `ResNet18` `MS-TCN` `Transformers` `Whisper` `Computer Vision`
 
 </td>
 <td width="50%">
 
-### [Peterlexity](https://github.com/pstaykov/Peterlexity)
-**AI Research Toolkit**
+### 🧮 [ML from Scratch](https://github.com/pstaykov/MLfromScratch)
+**ML Algorithms in Pure Python & C**
 
-- Orchestrates search & tool-based agents
-- Lightweight experimental framework
-- Built for AI research workflows
-- (rather just a showcase than a tool you would use)
+Implementations without sklearn — written to understand, not just to use.
 
-`Python` `AI Agents` `Research Tools`
+**Python:** Linear Regression, KNN, K-Means, CART, Random Forest, Gradient Boosting, NNs, CNNs, RNNs
+
+**C:** Linear Regression, KNN, K-Means
+
+- Each algorithm paired with a detailed markdown explanation
+- Roadmap: CUDA optimizations, Transformers, full C rewrite
+
+`Python` `C` `NumPy` `From Scratch`
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🧠 [CustomBrain](https://github.com/pstaykov/CustomBrain)
-**RAG System with Vector Search**
+### [Peterlexity](https://github.com/pstaykov/Peterlexity)
+**AI Research Agent**
 
-- Local PDF processing pipeline
-- Hugging Face embeddings integration
-- Pinecone vector database
-- Retrieval-Augmented Generation
+- ReAct-style looping with modular tool architecture
+- Structured function-calling via Anthropic API
+- Perplexity-like research workflow, built from scratch
 
-`Python` `Hugging Face` `Pinecone` `RAG`
+`Python` `AI Agents` `Function Calling`
 
 </td>
 <td width="50%">
 
-### [locable](https://github.com/pstaykov/locable)
-**Local LLM Code Generator**
+### ☕ [Café Lumière](https://github.com/pstaykov/Cafe)
+**Full-Stack AI-Powered Café Platform** · [Live Demo](https://cafe-skmi.onrender.com/)
 
-- Ollama-powered local LLMs
-- RAG for Bootstrap template search
-- Automated code generation
-- File I/O system integration
-- all local, no APIs and a local database for the RAG
+- Custom neural network for sentiment analysis
+- FastAPI backend with SQLite
+- Real-time reservation system
 
-`Python` `Ollama` `RAG` `HTML/CSS/JS`
+`Python` `FastAPI` `PyTorch` `SQLite`
 
 </td>
+
 </tr>
 </table>
 
@@ -176,8 +169,8 @@ class PeterStaykov:
 <td width="50%">
 
 ### DataCamp
+- Associate AI Engineer
 - Deep Learning with PyTorch
-- Associate AI Engineer  
 - Developing Large Language Models
 
 </td>
@@ -187,8 +180,6 @@ class PeterStaykov:
 - CS50x: Introduction to Computer Science
 - CS50p: Programming with Python
 
-*[View completion proof on GitHub contribution →](https://github.com/pstaykov)*
-
 </td>
 </tr>
 </table>
@@ -197,15 +188,12 @@ class PeterStaykov:
 
 <div align="center">
 
-### Open to Collaboration!
+### Open to Collaboration
 
-I'm interested in working on AI/ML projects, especially those involving:
-- Large Language Models & RAG Systems
-- Practical AI Applications
-- ML Engineering & MLOps
-- AI-Powered Web Applications
-
-### Let's Connect!
+Especially interested in:
+- Computer Vision & Audio-Visual Speech Recognition
+- ML Research & Competitive Programming
+- Quantitative Methods & AI Engineering
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-peter.staykov.net-blue?style=for-the-badge)](http://peter.staykov.net)
 [![Email](https://img.shields.io/badge/📧_Email-Contact_Me-red?style=for-the-badge)](mailto:peter.sta.2010@gmail.com)
@@ -213,7 +201,5 @@ I'm interested in working on AI/ML projects, especially those involving:
 ---
 
 ![Profile Views](https://komarev.com/ghpvc/?username=pstaykov&color=58A6FF&style=for-the-badge)
-
-*"Building the future, one line of code at a time"* 
 
 </div>
